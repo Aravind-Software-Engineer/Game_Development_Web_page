@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: poppins;
+  box-sizing: border-box;
+  user-select: none;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(237, 77, 2);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(237, 77, 2, .5);
+}
+
+.back-main {
+  background-image: url(./Game\ Images/img2.png);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+.nav-back {
+  backdrop-filter: blur(150px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(237, 77, 2, .5);
+  /* height: 8%; */
+  z-index: 20;
+
+}
+
+.custom-transition {
+  transition: all .7s;
+  border: transparent solid 1px;
+}
+.custom-t-without-b {
+  transition: all .7s;
+}
+
+.custom-transition:hover {
+  opacity: .5;
+  border: 1px solid rgba(237, 77, 2,1);
+}
+.custom-t-without-b:hover {
+  opacity: .5;
+}
+
+.heading {
+  color: white;
+  /* position: relative;
+  top: 6%;
+  left: 0; */
+  margin: 16% 0 0 0;
+}
+
+.heading2 {
+  /* position: relative;
+ 
+  top: 8%; */ 
+  margin: 2% 0 0 0;
+  color: white;
+}
+
+.heading2 span {
+  font-weight: 900;
+}
+.text-shadow-2{
+  text-shadow: 2px 2px 5px black;
+}
+.services{
+  background-color: transparent;
+  /* position: absolute;
+  top: 60%;
+  left: 0; */
+  /* margin-top: 20%; */
+}
+.back-g{
+  backdrop-filter: blur(10px);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  transition: all .7s;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(237, 77, 2);
+
+}
+.back-g i{
+  font-size: 30px;
+  text-shadow: 1px 1px .5px rgb(255, 255, 255);
+color: #000;
+}
+.back-g:hover{
+  backdrop-filter: blur(0);
+  border: 1px solid rgba(237, 77, 2, .5);
+}
+.background-2{
+  background-image: url(./Game\ Images/img3.png);
+  min-height: 110vh;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+}
+.image{
+  /* width: 100%; */
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  border: 1px solid transparent;
+  transition: border .5s;
+}
+.img1{
+  width: 400px;
+  height: 700px;
+}
+#readMOre{
+  /* position: absolute;
+  left: 30%;
+  top: 25%; */
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: border .5s;
+  backdrop-filter: blur(3px);
+}
+.lessread{
+  display: none;
+  /* position: absolute;
+  left: 30%;
+  top: 35%; */
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 3px;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  border: 1px solid transparent;
+  transition: border .5s;
+}
+.lessread:hover{
+  border: 1px solid rgba(237, 77, 2, .5);
+}
+#readMOre:hover{
+  border: 1px solid rgba(237, 77, 2, .5);
+}
+.read-More{
+  display: none;
+}
+.popular{
+  margin-top: 40px;
+}
+.background-3{
+  background-image: url(./Game\ Images/img5.png);
+  min-height: 140vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.acco-1{
+  backdrop-filter: blur(10px);
+  --bs-accordion-bg:tranparent;
+  --bs-accordion-color:white;
+  --bs-accordion-border-color:rgba(237, 77, 2, .5);
+  --bs-accordion-btn-color:white;
+  --bs-accordion-btn-focus-box-shadow:none;
+  --bs-accordion-active-bg:blur(0);
+  --bs-accordion-active-color:red;
+}
+.background-4{
+  background-image: url(./Game\ Images/img6.png);
+  min-height: 140vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: scroll;
+  background-position: center;
+}
+.card{
+  --bs-card-border-color:rgba(237, 77, 2, .5);
+  --bs-card-bg:tranparent;
+  backdrop-filter: blur(5px);
+  --bs-card-title-color:red;
+  --bs-card-color:white;
+  transition: all .7s;
+}
+.card:hover{
+  backdrop-filter: blur(0);
+}
+.background-5{
+  background-image: url(./Game\ Images/img11.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: scroll;
+  background-position: center;
+}
+.back-drop{
+  backdrop-filter: blur(5px);
+  transition: all .7s;
+}
+.back-drop:hover{
+  backdrop-filter: blur(0);
+}
+
+
+
+/* first-media */
+
+ @media (min-width:992px) {
+  .m-for-cont-99{
+    margin-top: 8% !important;
+  }
+  .words{
+    margin-top: -10%;
+  }
+  #first-video{
+    margin-top: -25%;
+    margin-left: 8%;
+    height: 600px;
+  }
+  #second-video{
+    margin-top: -20%;
+    margin-left: 8%;
+    height: 600px;
+  }
+  #third-video{
+    margin-top: -20%;
+    margin-left: 8%;
+    height: 600px;
+  }
+}
+@media (max-width:992px){
+  .Project-first-bg{
+    height: 70vh !important;
+  }
+}
+@media (max-width:875px){
+  .Project-first-bg{
+    height: 60vh !important;
+  }
+}
+@media (max-width:769px){
+  .Project-first-bg{
+    height: 45vh !important;
+  }
+  .m-for-cont-99{
+    margin-top: 18% !important;
+  }
+}
+/*
+
+
+/* Second-media */
+
+/* @media (max-width:840px){
+  .lessread{
+    top: 40%;
+  }
+} */
+
+
+/* Third-media */
+
+/* @media (max-width:545px){
+  .lessread{
+    top: 43%;
+    left: 40%;
+  }
+  .img1{
+    height: 700px;
+  }
+} */
+
+
+
+/* Fth-media */
+
+/* @media (max-width:435px){
+  .lessread{
+    top: 50%;
+    left: 35%;
+  }
+  .img1{
+    height: 600px;
+  }
+} */ 
+
+
+
+
+
+
+
+/* Keyframes */
+.Animating{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from{
+    transform: translateY(120px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.Footer{
+  background: #000000be;
+}
+.Footer .Last-links{
+  text-decoration: none;
+  color: white;
+  transition: all .7s;
+}
+.Footer .Last-links:hover{
+  color: red;
+}
+.addText{
+  color: white;
+}
+
+/* Common For All Pages */
+.float{
+  position: fixed;
+  bottom: 2%;
+  right: .5%;
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 150px;
+  align-items: center;
+  z-index: 400;
+  justify-content: space-around;
+  transition:.7s;
+}
+.float i{
+  font-size: 25px;
+}
+.float:hover{
+  backdrop-filter: blur(4px);
+}
+
+.get-in{
+  position: fixed;
+  right: .5%;
+  top: 15%;
+  z-index: 250;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 12px;
+  font-weight: 800;
+  transition: all .5s linear;
+  padding: 5px;
+  backdrop-filter: blur(5px);
+  transform: translateX(200px);
+  animation: Get-in 1s linear 4s 1 ;
+  animation-fill-mode: forwards;
+}
+.get-in:hover{
+  color: red;
+  backdrop-filter: blur(0);
+}
+@keyframes Get-in {
+  to{
+  transform: translateX(0);
+
+  }
+}
+
+
+
+
+
+
+
+/* Projects Page */
+.Project-first-bg{
+  background-image: url(./Game\ Images/img14.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: scroll;
+  color: white;
+  text-shadow: 2px 3px 5px black;
+}
+.bg-flow{
+  background-image: linear-gradient( to left,rgb(39,49,64),rgb(118,119,155));
+}
+.bg-flow-2{
+  background-image: linear-gradient( to left,rgb(118,119,155),rgb(39,49,64));
+}
+.bg-flow-3{
+  background-image: linear-gradient( to left,rgb(39,49,64),rgb(118,119,155));
+}
+.separator-1{
+  background-image: linear-gradient(to right,rgb(39,49,64),rgb(118,119,155));
+  height: 100px;
+}
+.separator-2{
+  background-image: linear-gradient(to right,rgb(118,119,155),rgb(39,49,64));
+  height: 100px;
+}
+.shado{
+  text-shadow: 1px 1px 2px #000;
+}
+
+
+
+
+
+
+/* About Page */
+
+.background-1-about{
+  min-height: 100vh;
+  background-image: url(./Game\ Images/img15.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.passion-div{
+  background-image: linear-gradient( to left,rgb(39,49,64),rgb(118,119,155));
+  
+}
+.background-2-about{
+  min-height: 110vh;
+  background-image: url(./Game\ Images/img16.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bagk-linear{
+  background-image: linear-gradient( to left,rgb(39,49,64),rgb(118,119,155));
+
+}
+.background-3-about{
+  background-image: url(./Game\ Images/img12.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-attachment: scroll;
+  background-position: center;
+}
+
+
+
+/* Contact Page */
+
+.contact-first{
+  background-image: linear-gradient( to left,rgb(39,49,64),rgb(118,119,155));
+}
+.m-for-cont-99{
+  margin-top: 15%;
+}
+.contact-background-1{
+  background-image: url(./Game\ Images/img13.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-color: #00000043;
+  height: 100%;
+  width: 100%;
+}
